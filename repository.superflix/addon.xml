@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="repository.superflix" name="Super Flix Repo" version="1.0.1" provider-name="Super Flix">
     <extension point="xbmc.addon.repository" name="PrimePlay.py">
-        <info compressed="false">https://raw.githubusercontent.com/superflix19/super/master/addons.xml</info>
-		<checksum>https://raw.githubusercontent.com/superflix19/super/master/addons.xml.md5</checksum>
-		<datadir zip="true">https://raw.githubusercontent.com/superflix19/super/master/repo</datadir>
+        <info compressed="false">https://github.com/flixsuper21/flixsuper/blob/master/addons.xml</info>
+		<checksum>https://github.com/flixsuper21/flixsuper/blob/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://github.com/flixsuper21/flixsuper/blob/master/repo</datadir>
     </extension>
     <extension point="xbmc.addon.metadata">
         <summary>Super Flix</summary>
@@ -11,4 +11,3 @@
         <platform>all</platform>
     </extension>
 </addon>
-
