@@ -1,4 +1,36 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+<addon id="plugin.video.f4mTester" name="f4mTester" version="2.7.2" provider-name="Shani">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="script.video.F4mProxy" version="2.7.1"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>f4mTester</summary>
+        <description></description>
+        <platform>all</platform>
+    </extension>
+</addon>
+
+<addon id="plugin.video.gdrive" version="0.8.66" name="gdrive" provider-name="ddurdle">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video audio image programs</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Listen to music, watch videos and view photos from your Google Drive account</summary>
+        <description>Plays music and video from your Google Drive account.  Not affiliated with Google.</description>
+        <platform>all</platform>
+    </extension>
+	<extension point="xbmc.service" library="service.py" start="login">
+    </extension>
+</addon>
+
 <addon id="plugin.video.superflix"
        name="[B][COLOR][COLOR yellow]SUPER FLIX[/B][/COLOR]"
        version="3.0"
@@ -15,11 +47,11 @@
     <import addon="script.module.youtube.dl" optional="true"/>
     <import addon="plugin.video.youtube" version="3.0.0"/>
     <import addon="script.module.urlresolver"/>
-    <import addon="script.module.simplejson" /> 
+    <import addon="script.module.simplejson" />
     <import addon="script.common.plugin.cache" version="2.5.2"/>
     <import addon="script.module.metahandler" version="2.5.1"/>
 	<import addon="script.module.livestreamer" optional="true"/>
-	
+
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
     <provides>video</provides>
@@ -27,37 +59,22 @@
   <extension point="xbmc.addon.metadata">
     <summary lang="en">SUPERFLIX</summary>
     <description lang="en">[COLOR yellow]l[/COLOR] TV [COLOR yellow]l[/COLOR] FILMES [COLOR yellow]l[/COLOR] SERIES [COLOR yellow]l[/COLOR] LANCAMENTOS [COLOR yellow]l[/COLOR] HD [COLOR yellow]l[/COLOR] FHD [COLOR yellow]l[/COLOR]
-[COLOR yellow]l[/COLOR] O autor não hospeda nem possui nenhum conteúdo encontrado neste addon. O autor não é responsável pelo uso e pelo conteúdo encontrado neste addon [COLOR yellow]l[/COLOR]
+[COLOR yellow]l[/COLOR] O autor nÃ£o hospeda nem possui nenhum conteÃºdo encontrado neste addon. O autor nÃ£o Ã© responsÃ¡vel pelo uso e pelo conteÃºdo encontrado neste addon [COLOR yellow]l[/COLOR]
 l [COLOR green][B]Super [/B][/COLOR][COLOR yellow][B]Flix[/B][/COLOR]- DO CINEMA PARA SUA CASA -[COLOR yellow]l[/COLOR]</description>
     <platform>all</platform>
   </extension>
 </addon>
-<addon id="plugin.video.gdrive" version="0.8.66" name="gdrive" provider-name="ddurdle">
-    <requires>
-        <import addon="xbmc.python" version="2.1.0"/>
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>video audio image programs</provides>
+
+<addon id="repository.superflix" name="Super Flix Repo" version="1.0.1" provider-name="Super Flix">
+    <extension point="xbmc.addon.repository" name="PrimePlay.py">
+        <info compressed="false">https://raw.githubusercontent.com/flixsuper21/flixsuper/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/flixsuper21/flixsuper/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/flixsuper21/flixsuper/master/repo</datadir>
     </extension>
     <extension point="xbmc.addon.metadata">
-        <summary>Listen to music, watch videos and view photos from your Google Drive account</summary>
-        <description>Plays music and video from your Google Drive account.  Not affiliated with Google.</description>
-        <platform>all</platform>
-    </extension>
-	<extension point="xbmc.service" library="service.py" start="login">
-    </extension>
-</addon>
-<addon id="plugin.video.f4mTester" name="f4mTester" version="2.7.2" provider-name="Shani">
-    <requires>
-        <import addon="xbmc.python" version="2.1.0"/>
-        <import addon="script.video.F4mProxy" version="2.7.1"/>
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary>f4mTester</summary>
-        <description></description>
+        <summary>Super Flix</summary>
+        <description>Filmes, series, desenhos</description>
         <platform>all</platform>
     </extension>
 </addon>
+</addons>
